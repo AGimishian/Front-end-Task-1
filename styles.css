@@ -1,0 +1,127 @@
+body {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;;
+    
+    
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*---------------------
+        HEADER
+---------------------*/
+
+header {
+   height: 100px;
+}
+
+.logo {
+    float: left;
+}
+
+.search {
+    float: right;
+}
+
+/*---------------------
+        MENU
+---------------------*/
+
+nav {
+    clear: both;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu li.item {
+    float: left;
+}
+
+ul.menu li.item a {
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    padding: 16px 5px;
+    text-decoration: none;
+    border: 1px solid black;
+    width: 120px;
+}
+
+ul.menu li.item a.active {
+    background-color: yellow;
+
+}
+
+/*---------------------
+        HERO
+---------------------*/
+
+.hero {
+    clear: both;
+    background-image: url("img/Mountains-and-hills-julian-alps.png");
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+}
+
+.hero_text {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    color: #FFC740;
+}
+
+.hero_par {
+    font-size: 14px;
+    color: rgb(8, 8, 8);
+}
+
+/*---------------------
+        ARTICLES
+---------------------*/
+
+
+
+
+/*---------------------
+        SERVICES
+---------------------*/
+
+
+
+/*---------------------
+        RESENT NEWS
+---------------------*/
+
+
+/*---------------------
+        CLIENTS
+---------------------*/
+
+
+/*---------------------
+        FOOTER
+---------------------*/
+footer {
+    height: 115px;
+    background: #6D3D99;
+}
+.footer_text {
+    
+    
+}
+
+footer p {
+    margin: 49px auto;
+    font-size: 14px;
+    color: #FFFFFF;
+}
