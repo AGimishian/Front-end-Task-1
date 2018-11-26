@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <header>
+        <header class="clearfix">
             <div class="logo">
                 <h3 class="logo_text">SUPER LOGO</h3>
             </div>
@@ -21,7 +21,7 @@
                 </form>
             </div>
         </header>
-        <nav>
+        <nav class="clearfix">
             <ul class="menu">
                 <li class="item"><a href="#" class="active">HOME</a></li>
                 <li class="item"><a href="#">ABOUT US</a></li>
@@ -33,137 +33,153 @@
                 <li class="item"><a href="#">CONTACT</a></li>
             </ul>
         </nav>
-        <div class="hero">
-            <h1 class="hero_text">Aliquam pharetra <br>vulputate</h1>
-            <p class="hero_par">Vivamus est mauris, sollicitudin ut ipsum 
-            pharetra, porta rutrum turpis. Suspendisse 
-            sollicitudin quam eget condimentum posuere. 
-            In auctor vel mi porta commodo. Vestibulum 
-            mattis fringilla tempus. Etiam eu consectetur 
-            nisi. Aenean blandit sodales euismod. In hac 
-            habitasse platea dictumst. </p>
-            <a href="#">READ MORE</a>
+        <div class="hero clearfix">
+            <div class="hero_content">
+                <h1 class="hero_text">Aliquam pharetra <br>vulputate</h1>
+                <p class="hero_par">Vivamus est mauris, sollicitudin ut ipsum 
+                pharetra, porta rutrum turpis. Suspendisse 
+                sollicitudin quam eget condimentum posuere. 
+                In auctor vel mi porta commodo. Vestibulum 
+                mattis fringilla tempus. Etiam eu consectetur 
+                nisi. Aenean blandit sodales euismod. In hac 
+                habitasse platea dictumst. </p>
+                <a href="#">READ MORE</a>
+            </div>
         </div>
-    
-        <article class="main_article">
-            <h3>ABOUT SUPER LOGO</h3>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit. Sed quam massa, dignissim at 
-            nisi nec, iaculis molestie leo. Aenean hendrerit 
-            pretium enim quis rutrum. Pellentesque mattis 
-            sem a efficitur auctor. Sed vulputate vitae dui 
-            non fermentum. Donec non sem dignissim, tincidunt 
-            arcu eget, posuere tellus. Quisque consectetur diam 
-            id faucibus sagittis. Praesent placerat, diam non 
-            sollicitudin suscipit, eros erat</p>
-            <a href=""></a>
-        </article>
-        <article class="main_article">
-            <h3>SOME WORDS OUR CEO</h3>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit. Sed quam massa, dignissim at 
-            nisi nec, iaculis molestie leo. Aenean hendrerit 
-            pretium enim quis rutrum. Pellentesque mattis 
-            sem a efficitur auctor. Sed vulputate vitae dui 
-            non fermentum. Donec non sem dignissim, tincidunt 
-            arcu eget, posuere tellus. Quisque consectetur diam 
-            id faucibus sagittis. Praesent placerat, diam non 
-            sollicitudin suscipit, eros erat</p>
-            <p></p>
-        </article>
-        <article class="main_article">
-            <h3>ABOUT SUPER LOGO</h3>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit. Sed quam massa, dignissim at 
-            nisi nec, iaculis molestie leo. Aenean hendrerit 
-            pretium enim quis rutrum. Pellentesque mattis 
-            sem a efficitur auctor. Sed vulputate vitae dui 
-            non fermentum. Donec non sem dignissim, tincidunt 
-            arcu eget, posuere tellus. Quisque consectetur diam 
-            id faucibus sagittis. Praesent placerat, diam non 
-            sollicitudin suscipit, eros erat</p>
-            <a href=""></a>
-        </article>
-        <article class="main_article">
-            <h3>SOME WORDS OUR CEO</h3>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit. Sed quam massa, dignissim at 
-            nisi nec, iaculis molestie leo. Aenean hendrerit 
-            pretium enim quis rutrum. Pellentesque mattis 
-            sem a efficitur auctor. Sed vulputate vitae dui 
-            non fermentum. Donec non sem dignissim, tincidunt 
-            arcu eget, posuere tellus. Quisque consectetur diam 
-            id faucibus sagittis. Praesent placerat, diam non 
-            sollicitudin suscipit, eros erat</p>
-            <p>Steve Jobs, CEO</p>
-        </article>
-
-        <section class="services">
-            <h3>SERVICES</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit. Sed quam massa, dignissim at 
-            nisi nec, iaculis molestie leo. Aenean hendrerit 
-            pretium enim quis rutrum. Pellentesque mattis 
-            sem a efficitur auctor. Sed vulputate vitae dui 
-            non fermentum. Donec non sem dignissim, tincidunt 
-            arcu eget, posuere tellus. Quisque consectetur diam 
-            id faucibus sagittis. Praesent placerat, diam non 
-            sollicitudin suscipit, eros erat</p>
-            <a href="">Read more...</a>
-        </section>
-
-        <section class="resent_posts">
-            <h3>RESENT POSTS</h3>
-            <article class="resent_article">
-                <h4>LOREM IPSUM</h4>
-                <img src="" alt="" class="resent_img">
-                <p>Aenean hendrerit pretium enim quis rutrum. 
-                Pellentesque mattis sem a efficitur auctor.</p>
+        <section class="main_articles clearfix">
+            <article class="main_article article1">
+                <div class="line purple"><h3>ABOUT SUPER LOGO</h3></div>
+                
+                <img src="img/article1.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit. Sed quam massa, dignissim at 
+                nisi nec, iaculis molestie leo. Aenean hendrerit 
+                pretium enim quis rutrum. Pellentesque mattis 
+                sem a efficitur auctor. Sed vulputate vitae dui 
+                non fermentum. Donec non sem dignissim, tincidunt 
+                arcu eget, posuere tellus. Quisque consectetur diam 
+                id faucibus sagittis. Praesent placerat, diam non 
+                sollicitudin suscipit, eros erat</p>
+                <a href="#">Read more...</a>
             </article>
-            <article class="resent_article">
-                <h4>LOREM IPSUM</h4>
-                <img src="" alt="" class="resent_img">
-                <p>Aenean hendrerit pretium enim quis rutrum. 
-                Pellentesque mattis sem a efficitur auctor.</p>
-            </article>
-            <article class="resent_article">
-                <h4>LOREM IPSUM</h4>
-                <img src="" alt="" class="resent_img">
-                <p>Aenean hendrerit pretium enim quis rutrum. 
-                Pellentesque mattis sem a efficitur auctor.</p>
+            <article class="main_article article2">
+                <div class="line yellow"><h3>SOME WORDS OUR CEO</h3></div>
+                <img src="img/article2.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit. Sed quam massa, dignissim at 
+                nisi nec, iaculis molestie leo. Aenean hendrerit 
+                pretium enim quis rutrum. Pellentesque mattis 
+                sem a efficitur auctor. Sed vulputate vitae dui 
+                non fermentum. Donec non sem dignissim, tincidunt 
+                arcu eget, posuere tellus. Quisque consectetur diam 
+                id faucibus sagittis. Praesent placerat, diam non 
+                sollicitudin suscipit, eros erat</p>
+                <p>Steve Jobs, CEO</p>
             </article>
         </section>
 
-        <section class="services">
-            <h3>SERVICES</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit. Sed quam massa, dignissim at 
-            nisi nec, iaculis molestie leo. Aenean hendrerit 
-            pretium enim quis rutrum. Pellentesque mattis 
-            sem a efficitur auctor. Sed vulputate vitae dui 
-            non fermentum. Donec non sem dignissim, tincidunt 
-            arcu eget, posuere tellus. Quisque consectetur diam 
-            id faucibus sagittis. Praesent placerat, diam non 
-            sollicitudin suscipit, eros erat</p>
-            <a href="">Read more...</a>
+        <section class="main_articles clearfix">
+            <article class="main_article article3">
+                <div class="line yellow"><h3>ABOUT SUPER LOGO</h3></div>
+                <img src="img/article3.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit. Sed quam massa, dignissim at 
+                nisi nec, iaculis molestie leo. Aenean hendrerit 
+                pretium enim quis rutrum. Pellentesque mattis 
+                sem a efficitur auctor. Sed vulputate vitae dui 
+                non fermentum. Donec non sem dignissim, tincidunt 
+                arcu eget, posuere tellus. Quisque consectetur diam 
+                id faucibus sagittis. Praesent placerat, diam non 
+                sollicitudin suscipit, eros erat</p>
+                <a href="#">Read more...</a>
+            </article>
+            <article class="main_article article4">
+                <div class="line purple"><h3>SOME WORDS OUR CEO</h3></div>
+                <img src="img/article4.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit. Sed quam massa, dignissim at 
+                nisi nec, iaculis molestie leo. Aenean hendrerit 
+                pretium enim quis rutrum. Pellentesque mattis 
+                sem a efficitur auctor. Sed vulputate vitae dui 
+                non fermentum. Donec non sem dignissim, tincidunt 
+                arcu eget, posuere tellus. Quisque consectetur diam 
+                id faucibus sagittis. Praesent placerat, diam non 
+                sollicitudin suscipit, eros erat</p>
+                <p>Steve Jobs, CEO</p>
+            </article>
         </section>
 
-        <section class="clients">
-            <h3>CLIENTS</h3>
-            <img src="" alt="" class="clients_img">
-            <img src="" alt="" class="clients_img">
-            <img src="" alt="" class="clients_img">
-            <img src="" alt="" class="clients_img">
-            <img src="" alt="" class="clients_img">
+        <section class="main_articles clearfix">
+
+            <section class="services_left">
+                <div class="line yellow"><h3>SERVICES</h3></div>
+                <p>Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit. Sed quam massa, dignissim at 
+                nisi nec, iaculis molestie leo. Aenean hendrerit 
+                pretium enim quis rutrum. Pellentesque mattis 
+                sem a efficitur auctor. Sed vulputate vitae dui 
+                non fermentum. Donec non sem dignissim, tincidunt 
+                arcu eget, posuere tellus. Quisque consectetur diam 
+                id faucibus sagittis. Praesent placerat, diam non 
+                sollicitudin suscipit, eros erat</p>
+                <a href="">Read more...</a>
+            </section>
+
+            <section class="resent_posts">
+                <div class="line purple"><h3>RESENT POSTS</h3></div> 
+                <article class="resent_article">
+                    <img src="img/resent-post1.png" alt="" class="resent_img">
+                    <p>LOREM IPSUM<br>
+                    Aenean hendrerit pretium enim quis rutrum. 
+                    Pellentesque mattis sem a efficitur auctor.</p>
+                </article>
+                <article class="resent_article">
+                    <img src="img/resent-post2.png" alt="" class="resent_img">
+                    <p>LOREM IPSUM<br>
+                    Aenean hendrerit pretium enim quis rutrum. 
+                    Pellentesque mattis sem a efficitur auctor.</p>
+                </article>
+                <article class="resent_article">
+                    <img src="img/resent-post3.png" alt="" class="resent_img">
+                    <p>LOREM IPSUM<br>
+                    Aenean hendrerit pretium enim quis rutrum. 
+                    Pellentesque mattis sem a efficitur auctor.</p>
+                </article>
+            </section>
+
+            <section class="services_right">
+                <div class="line yellow"><h3>SERVICES</h3></div>
+                <p>Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit. Sed quam massa, dignissim at 
+                nisi nec, iaculis molestie leo. Aenean hendrerit 
+                pretium enim quis rutrum. Pellentesque mattis 
+                sem a efficitur auctor. Sed vulputate vitae dui 
+                non fermentum. Donec non sem dignissim, tincidunt 
+                arcu eget, posuere tellus. Quisque consectetur diam 
+                id faucibus sagittis. Praesent placerat, diam non 
+                sollicitudin suscipit, eros erat</p>
+                <a href="">Read more...</a>
+            </section>
+        </section>
+
+        <section class="clients clearfix">
+                <div class="line purple"><h3>CLIENTS</h3></div>
+            <div class="clients_list">
+                <ul>
+                    <li><img src="img/client1.png" alt=""></li>
+                    <li><img src="img/client2.png" alt=""></li>
+                    <li><img src="img/client3.png" alt=""></li>
+                    <li><img src="img/client4.png" alt=""></li>
+                    <li><img src="img/client5.png" alt=""></li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
         <div class="footer_text">
-            <p>Copyright © Lodoss Team  2018</p>
+            
+                <p>Copyright © Lodoss Team  2018</p>
+            
         </div>
     </footer>
 </body>
