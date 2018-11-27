@@ -1,6 +1,6 @@
-body {
+* {
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;   
+    font-family: Roboto, sans-serif;
 }
 
 main {
@@ -18,17 +18,68 @@ main {
         HEADER
 ---------------------*/
 
+.progress {
+    min-height: 5px;
+    background-color: #6D3D99;
+    margin-bottom: 25px;
+}
+
 header {
-   height: 100px;
+   min-height: 48px;
+   margin-bottom: 16px;
 }
 
 .logo {
     float: left;
+    min-width: 168px;
+    position: relative;
+}
+
+.rectangle {
+    width: 50px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 3px solid #FFC740;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.logo_text {
+    position: absolute;
+    font-size: 24px;
+    font-style: bold;
+    margin: 0;
+    top: 12px;
+    left: 25px;
+    background-color: white;
 }
 
 .search {
     float: right;
+    min-width: 200px;
+    margin-top: 10px;
 }
+
+form.search_bar input[type="text"] {
+    float: left;
+    width: 158px;
+    font-size: 14px;
+    padding: 7px 11px;
+    border: 1px solid #6D3D99;
+    border-right: none;
+}
+
+form.search_bar button {
+    float: left;
+    width: 42px;
+    font-size: 14px;
+    padding: 7px 11px;
+    color: white;
+    background-color: #9B51E0;
+    border: 1px solid #6D3D99;
+    border-left: none;
+}
+
 
 /*---------------------
         MENU
@@ -49,12 +100,16 @@ ul.menu li.item {
 }
 
 ul.menu li.item a {
-    box-sizing: border-box;
     display: block;
     text-align: center;
-    padding: 16px 5px;
     text-decoration: none;
-    width: 120px;
+    width: 123px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+ul.menu li.item:last-of-type a {
+    width: 99px;
 }
 
 ul.menu li.item a.active {
@@ -67,15 +122,19 @@ ul.menu li.item a.active {
 ---------------------*/
 
 .hero {
-    background-image: url("img/Mountains-and-hills-julian-alps.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/Mountains-and-hills-julian-alps.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 35px;
+    min-height: 330px;
+    position: relative;
 }
 
 .hero_content {
-    padding: 5px 0 0 45px;   
+    position: absolute;
+    top: 20px;
+    left: 42px;
 }
 
 .hero_text {
@@ -84,6 +143,7 @@ ul.menu li.item a.active {
     font-weight: normal;
     line-height: normal;
     color: #FFC740;
+    margin-top: 0;
     margin-bottom: 5px;
 }
 
@@ -91,6 +151,7 @@ ul.menu li.item a.active {
     width: 50%;
     font-size: 14px;
     color: white;
+    text-align: left;
 }
 
 .hero_content a {
@@ -105,15 +166,18 @@ ul.menu li.item a.active {
         ARTICLES
 ---------------------*/
 
-.main_articles {
+.posts_row {
     margin-bottom: 35px;
+    padding-left: 9px;
+    padding-right: 9px;
 }
 
 .line h3 {
     display: inline-block;
     font-size: 14px;
     margin-left: 16px;
-    margin-top: 0;
+    margin-top: 0px;
+    padding-top: 1px;
     vertical-align: bottom;
     padding-left: 4px;
     padding-right: 4px;
@@ -122,7 +186,7 @@ ul.menu li.item a.active {
 
 .line {
     height: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .purple {
@@ -144,11 +208,11 @@ ul.menu li.item a.active {
     color: black;
 }
 
-.main_article {
-    text-align: justify;
+.post {
+    width: 460px;
 }
 
-.main_article img {
+.post img {
     float: left;
     margin-right: 20px;
     width: 142px;
@@ -157,25 +221,21 @@ ul.menu li.item a.active {
     padding: 2px;
 }
 
-.article1 {
-    width: 460px;
+.post-1 {    
     margin-right: 10px;
     float: left;
 }
 
-.article2 {
-    width: 460px;
+.post-2 {   
     float: right;
 }
 
-.article3 {
-    width: 460px;
+.post-3 {   
     margin-right: 10px;
     float: left;
 }
 
-.article4 {
-    width: 460px;
+.post-4 {   
     float: right;
 }
 
@@ -187,19 +247,24 @@ ul.menu li.item a.active {
 .services_left {
     float: left;
     width: 302px;
-    margin-right: 20px;
+    margin-right: 18px;
+    padding: 1px;
 }
 
 .resent_posts {
     float: left;
     width: 302px;
-    margin-right: 20px;
+    margin-right: 18px;
+    padding: 1px;
 }
 
 .services_right {
     float: left;
     width: 302px;
+    padding: 1px;
 }
+
+
 
 /*---------------------
         RESENT NEWS
@@ -222,18 +287,21 @@ ul.menu li.item a.active {
 ---------------------*/
 
 .clients_list {
-    padding: 20px;
+    padding: 15px;
 }
 
 .clients ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
+    
 }
 
 .clients ul li {
     display: inline-block;
-    vertical-align: center;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 /*---------------------
@@ -246,11 +314,12 @@ footer {
 .footer_text {
     width: 960px;
     margin: 0 auto;
-    padding: 50px;  
+    padding: 49px;  
 }
 
 footer p {
     text-align: center;
     font-size: 14px;
     color: #FFFFFF;
+    margin: 0;
 }

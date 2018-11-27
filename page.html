@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Front-end Task 1</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-    <main>
+        <div class="progress"></div>
+    <main>       
         <header class="clearfix">
             <div class="logo">
-                <h3 class="logo_text">SUPER LOGO</h3>
+                <div class="rectangle"></div>
+                <h3 class="logo_text">SUPER LOGO</h3>               
             </div>
             <div class="search">
-                <form action="" class="search2">
+                <form action="" class="search_bar">
                     <input type="text">
-                    <button>GO</button>
+                    <button type="submit">GO</button>
                 </form>
             </div>
         </header>
@@ -33,7 +36,7 @@
                 <li class="item"><a href="#">CONTACT</a></li>
             </ul>
         </nav>
-        <div class="hero clearfix">
+        <section class="hero clearfix">
             <div class="hero_content">
                 <h1 class="hero_text">Aliquam pharetra <br>vulputate</h1>
                 <p class="hero_par">Vivamus est mauris, sollicitudin ut ipsum 
@@ -45,9 +48,9 @@
                 habitasse platea dictumst. </p>
                 <a href="#">READ MORE</a>
             </div>
-        </div>
-        <section class="main_articles clearfix">
-            <article class="main_article article1">
+        </section>
+        <section class="posts_row clearfix">
+            <article class="post post-1">
                 <div class="line purple"><h3>ABOUT SUPER LOGO</h3></div>
                 
                 <img src="img/article1.png" alt="">
@@ -62,7 +65,7 @@
                 sollicitudin suscipit, eros erat</p>
                 <a href="#">Read more...</a>
             </article>
-            <article class="main_article article2">
+            <article class="post post-2">
                 <div class="line yellow"><h3>SOME WORDS OUR CEO</h3></div>
                 <img src="img/article2.png" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur 
@@ -78,8 +81,8 @@
             </article>
         </section>
 
-        <section class="main_articles clearfix">
-            <article class="main_article article3">
+        <section class="posts_row clearfix">
+            <article class="post post-3">
                 <div class="line yellow"><h3>ABOUT SUPER LOGO</h3></div>
                 <img src="img/article3.png" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur 
@@ -93,7 +96,7 @@
                 sollicitudin suscipit, eros erat</p>
                 <a href="#">Read more...</a>
             </article>
-            <article class="main_article article4">
+            <article class="post post-4">
                 <div class="line purple"><h3>SOME WORDS OUR CEO</h3></div>
                 <img src="img/article4.png" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur 
@@ -109,7 +112,7 @@
             </article>
         </section>
 
-        <section class="main_articles clearfix">
+        <section class="posts_row services clearfix">
 
             <section class="services_left">
                 <div class="line yellow"><h3>SERVICES</h3></div>
@@ -176,10 +179,8 @@
         </section>
     </main>
     <footer>
-        <div class="footer_text">
-            
-                <p>Copyright © Lodoss Team  2018</p>
-            
+        <div class="footer_text">           
+                <p>Copyright &copy; Lodoss Team  2018</p>           
         </div>
     </footer>
 </body>
